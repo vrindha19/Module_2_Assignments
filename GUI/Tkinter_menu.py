@@ -1,0 +1,32 @@
+from tkinter import*
+from tkinter.ttk import*
+from time import strftime
+root=Tk()
+root.title("menu Demonstration")
+menubar=Menu(root)
+file= Menu(menubar,tearoff=0)
+menubar.add_cascade(label='file',menu=file)
+file.add_command(label='New file',command=None)
+file.add_command(label='Save',command=None)
+file.add_command(label='Save as',command=None)
+file.add_separator()
+file.add_command(label='Exit',command=root.destroy)
+edit=Menu(menubar,tearoff=0)
+menubar.add_cascade(label='Edit',menu=edit)
+edit.add_command(label='cut',command=None)
+edit.add_command(label='copy',command=None)
+edit.add_command(label='paste',command=None)
+edit.add_command(label='select all',command=None)
+edit.add_separator()
+edit.add_command(label='find....',command=None)
+edit.add_command(label='find again',command=None)
+help_ = Menu(menubar,tearoff=0)
+menubar.add_cascade(label='Help',menu=help_)
+help_.add_command(label='tk Help',command=None)
+help_.add_command(label='Demo',command=None)
+help_.add_separator()
+help_.add_command(label='About tk',command=None)
+root.config(menu=menubar)
+mainloop()
+
+
