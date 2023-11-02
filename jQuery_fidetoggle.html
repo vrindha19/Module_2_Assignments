@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+$("#div1").fideToggle();
+$("div2").fideToggle("show");
+$("#div3").fideToggle(3000);
+});
+});
+// $(document).ready(function(){
+// $("button").click(function(){
+// $("#div1").fadeToggle();
+// $("#div2").fadeToggle("slow");
+// $("#div3").fadeToggle(3000);
+// });
+// });
+
+
+</script>
+
+</head>
+<body>
+    <p>See the fadeToggle() method example with different parameters.</p>
+<button>Click to fade Toggle boxes</button><br><br>
+<div id="div1" style="width:80px;height:80px;background-color:red;"></div><br>
+<div id="div2" style="width:80px;height:80px;background-color:green;"></div><br>
+<div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+    
+</body>
+</html>
