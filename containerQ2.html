@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       * {
+  box-sizing: border-box;
+}
+
+
+
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-left {
+  background-color: #34a48ec0;
+  padding: 100px;
+  flex: 30%;
+}
+
+/* .flex-item-right {
+  background-color:  #f1f1f1;;
+  padding: 30px;
+  flex: 40%;
+}
+.flex-item-right {
+  background-color: rgb(44, 22, 3);
+  padding: 50px;
+  flex: 50%;
+  box-sizing: border-box;
+} */
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+.flex-item-right {
+  background-color: #1c87c9;;
+  padding: 90px;
+  flex: 10%;
+}
+.flex-item-right {
+  background-color: #1abc9c;
+  padding: 0px;
+  flex: 50%;
+}
+.flex-item-right {
+  background-color:rgb(30, 55, 30);
+  padding: 50px;
+  flex: 50%;
+}
+
+@media (max-width: 100px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+       
+
+    </style>
+</head>
+<body>
+    <div class=" flex-container" ></div>
+        <h1 class="flex-item-left">Header</h1>
+            </div>
+            <div>
+                <h1 class="flex-item-right">main content</h1>
+            </div>
+            <div>
+                <h1 class="flex-item-right"> sidebar</h1>
+            </div>
+            <div>
+                <h1 class="flex-item-right">twin</h1>
+            </div>
+            <div>
+                <h1 class="flex-item-right">twin</h1>
+            </div>
+            <div>
+                <h1 class="flex-item-right">footer</h1>
+            </div>
+           
+  
+</div>
+
+
+
+    
+</body>
+</html>
